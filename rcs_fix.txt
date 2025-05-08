@@ -1,0 +1,66 @@
+REM This script assumes the Android device is unlocked and on the home screen
+
+REM Open Settings
+DELAY 500
+STRING am start -a android.settings.SETTINGS
+ENTER
+DELAY 2000
+
+REM Open Apps & Notifications settings
+STRING am start -a android.settings.MANAGE_APPLICATIONS_SETTINGS
+ENTER
+DELAY 2000
+
+REM Show System apps (assumes input method supports search)
+STRING Carrier Services
+DELAY 1500
+DOWNARROW
+ENTER
+DELAY 1000
+
+REM Force stop Carrier Services
+STRING input tap 800 1800
+ENTER
+DELAY 1000
+
+REM Clear data
+STRING pm clear com.google.android.ims
+ENTER
+DELAY 1000
+
+REM Go back to app list and search for Messages
+STRING input keyevent 4
+ENTER
+DELAY 1000
+STRING Messages
+DELAY 1500
+DOWNARROW
+ENTER
+DELAY 1000
+
+REM Force stop Messages
+STRING input tap 800 1800
+ENTER
+DELAY 1000
+
+REM Clear Messages data
+STRING pm clear com.google.android.apps.messaging
+ENTER
+DELAY 1000
+
+REM Toggle Airplane Mode off (toggle twice to simulate full cycle)
+STRING settings put global airplane_mode_on 1
+ENTER
+DELAY 1000
+STRING am broadcast -a android.intent.action.AIRPLANE_MODE --ez state true
+ENTER
+DELAY 2000
+STRING settings put global airplane_mode_on 0
+ENTER
+DELAY 1000
+STRING am broadcast -a android.intent.action.AIRPLANE_MODE --ez state false
+ENTER
+DELAY 2000
+
+REM Done
+
