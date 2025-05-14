@@ -1,13 +1,11 @@
 REM TEST SCRIPT
 
 GUI b 
-DELAY 800
-CTRL l
-DELAY 800
-ALT k
-DELAY 900
-STRING www.github.com/highdeftant
 DELAY 250
+CTRL l
+DELAY 250
+ALT k
+DELAY 250
+STRING www.github.com/highdeftant
 ENTER
-DELAY 1100
-MENU
+DELAY 250

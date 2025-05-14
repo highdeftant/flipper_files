@@ -1,0 +1,13 @@
+REM Brings up github page
+
+GUI h
+DELAY 1000
+GUI SPACE
+DELAY 250
+STRING https://github.com/highdeftant
+DELAY 75
+TAB
+DELAY 75
+ENTER
+DELAY 150
+ENTER
