@@ -1,0 +1,10 @@
+REM Making this script to change the BG of my colleagues computers
+REM This script only works on Windows
+
+ATTACKMODE HID VID_046d PID_c32b
+
+GUI
+DELAY 50
+STRING edge
+ENTER
+DELAY 100
