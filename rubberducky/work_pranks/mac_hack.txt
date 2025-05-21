@@ -1,0 +1,14 @@
+REM Pulls up TextEdit app on Mac and displays a message
+
+ATTACKMOD HID VID_05ac PID_0267
+
+DELAY 200
+GUI SPACE
+DELAY 300
+STRING textedit.app
+DELAY 100
+ENTER
+STRING muahaha you have been hacked by Ant!
+DELAY 100
+ENTER
+STRING You should learn to lock your PC so people can't run automated scripts!
