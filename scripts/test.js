@@ -12,11 +12,19 @@ badusb.setup({
 print("Waiting for USB connection...");
 
 while (!badusb.isConnected()) {
-    delay(500); // Check every 0.5 seconds
+    delay(250); // Check every 0.5 seconds
 }
 
 print("USB connected!");
 notify.blink("green", "short");
+notify.success()
+
+badusb.press("GUI", "r");
+delay(300);
+badusb.println("cmd")
+delay(700)
+badusb.println("echo THIS IS A SCRIPT DEMONSTRATING THE DANGERS OF LEAVING YOUR PC OPEN")
+badusb.println("YOU WERE HACKED BY AMA")
+
 
 badusb.quit();
-
