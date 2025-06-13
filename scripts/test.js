@@ -17,14 +17,17 @@ while (!badusb.isConnected()) {
 
 print("USB connected!");
 notify.blink("green", "short");
-notify.success()
+notify.success();
 
+delay(500);
+bad.press("GUI", "d);
+delay(500);
 badusb.press("GUI", "r");
-delay(300);
+delay(500);
 badusb.println("cmd")
-delay(700)
-badusb.println("echo THIS IS A SCRIPT DEMONSTRATING THE DANGERS OF LEAVING YOUR PC OPEN")
-badusb.println("YOU WERE HACKED BY AMA")
+delay(700);
+badusb.println("echo THIS IS A SCRIPT DEMONSTRATING THE DANGERS OF LEAVING YOUR PC OPEN");
+badusb.println("YOU WERE HACKED BY AMA");
 
 
 badusb.quit();
