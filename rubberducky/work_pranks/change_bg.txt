@@ -3,8 +3,8 @@ REM This script only works on Windows
 
 ATTACKMODE HID VID_046d PID_c32b
 
-GUI
-DELAY 50
-STRING edge
+GUI r
+DELAY 600
+STRING https://github.com/highdeftant/flipper_files/egg.jp
 ENTER
 DELAY 100

@@ -16,6 +16,6 @@ GUI UPARROW
 DELAY 1000
 CTRL t
 DELAY 1000
-STRING you shoud go to https://github.com/highdeftant to see more of my code
+STRING you should go to https://github.com/highdeftant to see more of my code
 DELAY 1800
 ENTER
