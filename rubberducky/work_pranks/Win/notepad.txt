@@ -1,0 +1,21 @@
+REM Opens Notepad on Windows and types some funny messages
+
+ATTACKMODE HID VID_046d PID_c32b
+
+Delay 300
+REM Minimizes all windows
+GUI m
+DELAY 500
+GUI r
+delay 750
+STRING notepad.exe
+DELAY 700
+ENTER
+DELAY 3000
+GUI UPARROW
+DELAY 1000
+CTRL t
+DELAY 1000
+STRING you should go to https://github.com/highdeftant to see more of my code
+DELAY 1800
+ENTER

@@ -1,0 +1,8 @@
+REM This will replace the basic "unplug" sound from Windows with an agonizing scream
+
+
+
+DELAY 2000
+GUI r
+DELAY 400
+STRING cmd /c "start /MIN cmd /C bitsadmin.exe /transfer 'e' {INSERT LINK TO SCREAM HERE} %USERPROFILE%\s.wave&&@reg"
