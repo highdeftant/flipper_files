@@ -1,0 +1,6 @@
+REM This script has been created to fix RCS messaging on Android
+
+GUI i
+DELAY 400
+CTRL l
+STRING apps
