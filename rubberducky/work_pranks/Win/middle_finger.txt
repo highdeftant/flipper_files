@@ -1,0 +1,48 @@
+REM Opens Notepad and gives user a middle finger!
+
+ATTACKMODE HID VID_046d PID_c32b
+
+DELAY 400
+GUI m
+DELAY 300
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1500
+ENTER
+ENTER
+ENTER
+ENTER
+ENTER
+STRING      _                         _
+ENTER
+STRING     |_|                       |_|
+ENTER
+STRING     | |         /^^^\         | |
+ENTER
+STRING    _| |_      (| "o" |)      _| |_
+ENTER
+STRING  _| | | | _    (_---_)    _ | | | |_ 
+ENTER
+STRING | | | | |' |    _| |_    | `| | | | |
+ENTER
+STRING \          /   /     \   \          /
+ENTER
+STRING  \        /  / /(. .)\ \  \        /
+ENTER
+STRING    \    /  / /  | . |  \ \  \    /
+ENTER
+STRING      \  \/ /    ||Y||    \ \/  /
+ENTER
+STRING        \_/      || ||      \_/
+ENTER
+STRING                 () ()
+ENTER
+STRING                 || ||
+ENTER
+STRING                ooO Ooo
+ENTER
+ENTER
+ENTER
+STRING ~Yea BITCH, hacked by Ant!~
